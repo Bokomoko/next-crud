@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { signIn, signOut, useSession } from 'next-auth/client';
 
-export default function Nav() {
+export default function Nav(): JSX.Element {
   const [session, loading] = useSession();
 
   return (
@@ -30,6 +30,11 @@ export default function Nav() {
               <Link href="/product">
                 <a className="border-l-2 border-2 px-4 rounded-lg hover:bg-gray-400 transition duration-200">
                   Products
+                </a>
+              </Link>
+              <Link href="/user">
+                <a className="border-l-2 border-2 px-4 rounded-lg hover:bg-gray-400 transition duration-200">
+                  Users
                 </a>
               </Link>
               <button
