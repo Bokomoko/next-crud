@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { signIn, signOut, useSession } from 'next-auth/client';
 
-const Nav: NextComponentType = () => {
+export default function Nav() {
   const [session, loading] = useSession();
 
   return (
@@ -12,8 +12,8 @@ const Nav: NextComponentType = () => {
         <Link href="/">
           <a className="flex">
             <Image
-              src="/logo.jpg"
-              alt="Logo Teach Other"
+              src="/sapowarelogo.svg"
+              alt="SapoWare Product Store"
               width={60}
               height={60}
             />
@@ -22,21 +22,21 @@ const Nav: NextComponentType = () => {
         <ul className="flex justify-between items-center space-x-4 mr-4 text-white text-2xl leading-10">
           <Link href="/search">
             <a className="border-l-2 border-2 px-4 rounded-lg hover:bg-gray-400 transition duration-200">
-              Buscar Professor
+              Search Product
             </a>
           </Link>
           {session ? (
             <>
-              <Link href="/profile">
+              <Link href="/product">
                 <a className="border-l-2 border-2 px-4 rounded-lg hover:bg-gray-400 transition duration-200">
-                  Perfil
+                  Products
                 </a>
               </Link>
               <button
                 className="border-l-2 border-2 px-4 rounded-lg hover:bg-gray-400 transition duration-200"
                 onClick={(): Promise<void> => signOut()}
               >
-                Sair
+                Exit
               </button>
             </>
           ) : (
@@ -53,4 +53,4 @@ const Nav: NextComponentType = () => {
   );
 };
 
-export default Nav;
+
