@@ -1,12 +1,16 @@
-# Teach Other
+# Simple crud in Next + Tailwind
 
-Teach other is a private lesson scheduling service for college students.
+This app made with Next.js uses another backend app made with next (prod-store)
 
-This was the final project from an University class called "Projeto Transversal 1" (University of Brasília - Network Engineering)
+## User Stories
 
-## YouTube tutorial
-
-You can watch a full tutorial about this project on [YouTube](https://www.youtube.com/watch?v=MeYibJFi7p0&list=PLbV6TI03ZWYVxGBKyYJf_Qy6d4saMbCq3&index=2).
+•	As a user, I want to create a product with at least these fields: name, description, price and published_at
+•	As a user, I want to upload one or more images to the product.
+•	As a user, I want to list all the products I've created.
+•	As a user, I want to update and soft deletes a product
+•	As a user, I want to confirm my email to start using the application
+•	As a guest, I want to sign up and sign in to the application
+•	As a new user, I need to confirm my email address to start using the application
 
 ## How to run this website
 
@@ -40,10 +44,4 @@ yarn dev
 ## Features included
 
 - Authentication (create account/login)
-- List teachers by class
-- Schedule a private lesson
-- Spend and recieve a digital currency
-
-## Live version
-
-You can visit the live version of Teach Other on https://teach-other.vercel.app
+- CRUD products and images
