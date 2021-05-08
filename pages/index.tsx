@@ -1,7 +1,8 @@
-import Image from 'next/image';
+import React from 'react'
 
 import Nav from '../components/nav';
 import Footer from '../components/footer';
+import ProductList from '../componentes/productlist'
 
 export default function IndexPage(): JSX.Element {
   return (
@@ -11,7 +12,9 @@ export default function IndexPage(): JSX.Element {
         <div className="flex flex-row space-x-64 w-2/5 m-auto text-white">
           <h1 className="text-3xl my-56 rounded-lg p-4">
             Product Store
-          </h1>
+           </h1>
+          <ProductList />
+
         </div>
       </div>
       <div className="text-center">

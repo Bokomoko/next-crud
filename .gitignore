@@ -30,7 +30,12 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# package lock files
+package-json.lock
+yarn.lock
+
 # vercel
 .vercel
 
 todo.txt
+package-lock.json
